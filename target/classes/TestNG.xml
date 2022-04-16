@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" parallel="tests" thread-count="2">
+    <test name="TestChrome">
+        <parameter name="browserName" value="chrome">
+        <classes>
+            <class name="test.TC01VerifyLoginpage" />
+            <class name="test.TC02VerifyLoginSuccessfully" />
+            <class name="test.TC03VerifyProductCategoriesPage" />
+            <class name="test.TC03_01VerifyNameRequiredFieldInProductCategoriesPage" />
+            <class name="test.TC03_2VerifyImageRequiredFieldInProductCategoriesPage" />
+            <class name="test.TC04VerifyCodeRequiredFieldInProductCategoriesPage" />
+            <class name="test.TC05VerifyProductsPage" />
+            <class name="test.TC06VerifyNameRequiredFieldInProductsPage" />
+            <class name="test.TC07VerifyImageRequiredFieldInProductsPage" />
+            <class name="test.TC08VerifyCreateAttributeGroupPage" />
+            <class name="test.TC09VerifyCreateNewAttributeGroup" />
+            <class name="test.TC10VerifyNewCreateAttribute" />
+        </classes>
+        </parameter>
+    </test>
+    <test name="TestFirefox">
+        <parameter name="browserName" value="firefox">
+            <classes>
+                <class name="test.TC01VerifyLoginpage" />
+                <class name="test.TC02VerifyLoginSuccessfully" />
+                <class name="test.TC03VerifyProductCategoriesPage" />
+                <class name="test.TC03_01VerifyNameRequiredFieldInProductCategoriesPage" />
+                <class name="test.TC03_2VerifyImageRequiredFieldInProductCategoriesPage" />
+                <class name="test.TC04VerifyCodeRequiredFieldInProductCategoriesPage" />
+                <class name="test.TC05VerifyProductsPage" />
+                <class name="test.TC06VerifyNameRequiredFieldInProductsPage" />
+                <class name="test.TC07VerifyImageRequiredFieldInProductsPage" />
+                <class name="test.TC08VerifyCreateAttributeGroupPage" />
+                <class name="test.TC09VerifyCreateNewAttributeGroup" />
+                <class name="test.TC10VerifyNewCreateAttribute" />
+            </classes>
+        </parameter>
+    </test>
+</suite>
