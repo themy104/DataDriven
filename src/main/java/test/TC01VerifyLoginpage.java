@@ -17,6 +17,7 @@ public class TC01VerifyLoginpage extends BaseTest{
         if(loginPage.isDisplayLoginPage() == false){
             System.out.println("No element");
         }
+        System.out.println("Demo");
     }
     @DataProvider(name = "testdata")
     public Object [][] getData() throws Exception {
